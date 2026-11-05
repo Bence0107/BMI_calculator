@@ -8,8 +8,22 @@
 </head>
 <body>
 
-  <div id="app">
-    <h1 class="text-3xl">Te melyik kategóriába tartozol?</h1>
+  <p class="text-green-700 text-center font-bold">BMI-kalkulátor</p>
+  <h1 class="text-4xl text-center font-bold">Te hová tartozol?</h1>
+
+  <div class="urlap flex flex-col gap-2.5">
+    <p class="font-bold">Számítsd ki a BMI-értékedet!</p>
+    <div class="flex flex-row flex-wrap gap-2.5">
+      <div class="flex flex-col gap-1">
+        <label>Testsúly (kg)</label>
+        <input id="testsuly" type="number" placeholder="Például: 68">
+      </div>
+      <div class="flex flex-col gap-1">
+        <label>Magasság (cm)</label>
+        <input id="magassag" type="number" placeholder="Például: 172">
+      </div>
+    </div>
+    <button onclick="szamitas()">Számítás</button>
   </div>
 
   <script type="module" src="/src/main.js"></script>
