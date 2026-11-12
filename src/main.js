@@ -2,7 +2,7 @@ import './style.css';
 import { renderImages } from './render';
 import { bmiRules } from './rules';
 
-renderBmi(bmiRules);
+renderImages(bmiRules);
 
 window.szamitas = function szamitas() {
   const testsuly = document.getElementById("testsuly").value;
